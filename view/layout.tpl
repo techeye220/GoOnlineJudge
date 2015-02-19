@@ -38,7 +38,23 @@
           <div class="nav-wrapper">
             <div class="col s12">
               <a href="/" class="left brand-logo">ZJGSU</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
               <ul class="right hide-on-med-and-down">
+                <li {{if .IsNews}}class="active"{{end}}><a href="/">Home</a></li>
+                <li {{if .IsProblem}}class="active"{{end}}><a href="/problems">Problems</a></li>
+                <li {{if .IsStatus}}class="active"{{end}}><a href="/status">Status</a></li>
+                <li {{if .IsRanklist}}class="active"{{end}}><a href="/ranklist">Ranklist</a></li>
+                <li {{if .IsContest}}class="active"{{end}}><a href="/contests">Contests</a></li>
+                <li {{if.IsOSC}}class="active"{{end}}><a href="/osc">OSC</a></li>
+                <li {{if.IsFAQ}}class="active"{{end}}><a href="/faq">FAQ</a></li>
+                <li>
+                  <a class="dropdown-button" href="#" data-activates="user-dropdown">
+                    <i class="mdi-action-account-circle"></i>
+                    <i class="mdi-navigation-arrow-drop-down"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
                 <li {{if .IsNews}}class="active"{{end}}><a href="/">Home</a></li>
                 <li {{if .IsProblem}}class="active"{{end}}><a href="/problems">Problems</a></li>
                 <li {{if .IsStatus}}class="active"{{end}}><a href="/status">Status</a></li>
@@ -68,11 +84,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col s9 left">
-            <h5 class="white-text">About Us</h5>
-            <p class="grey-text text-lighten-3"></p>
-          </div>
-          <div class="col s3 right">
+          <div class="left col s6">
             <h5 class="white-text">Developers</h5>
             <ul>
               <li><a class="grey-text text-lighten-3" href="https://github.com/memelee" target="_blank">@ lzt163</a></li>
@@ -80,6 +92,10 @@
               <li><a class="grey-text text-lighten-3" href="https://github.com/JinweiClarkChao" target="_blank">@ JinweiClarkChao</a></li>
               <li><a class="grey-text text-lighten-3" href="https://github.com/rex-zsd" target="_blank">@ rex-zsd</a></li>
             </ul>
+          </div>
+          <div class="right col s6">
+            <h5 class="white-text">About Us</h5>
+            <p class="grey-text text-lighten-3"></p>
           </div>
         </div>
       </div>
