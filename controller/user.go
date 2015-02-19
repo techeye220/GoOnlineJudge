@@ -51,7 +51,7 @@ func (uc *UserController) Register() {
 			http.Error(uc.W, err.Error(), 500)
 			return
 		} else if err == nil {
-			valid.AppendError("uid", "Handle is currently in use.")
+			valid.AppendError("uid", "currently in use.")
 		}
 	}
 
