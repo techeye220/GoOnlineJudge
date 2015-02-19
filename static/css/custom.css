@@ -1,0 +1,20 @@
+nav
+{
+	overflow: hidden;
+}
+
+.row
+{
+    margin-bottom: 0;
+}
+
+.header
+{
+	color: #ee6e73;
+	font-weight: 300;
+}
+
+.footer-copyright
+{
+    margin-top: 20px;
+}
