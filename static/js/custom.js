@@ -31,7 +31,7 @@ $(document).ready(function() {
                 }
             },
             error: function() {
-                toast('Incorrect Account or Password.', 4000);
+                toast('Incorrect Account or Password', 4000);
             }
         });
     });
@@ -48,19 +48,19 @@ $(document).ready(function() {
             error: function(response) {
                 var json = eval('('+response.responseText+')');
                 if(json.uid != null) {
-                    toast(json.uid, 4000);
+                    toast('Account: ' + json.uid, 4000);
                 }            
                 if(json.nick != null) {
-                    toast(json.nick, 4000);
+                    toast('Nickname: ' + json.nick, 4000);
                 }
                 if(json.pwd != null) {
-                    toast(json.pwd, 4000);
+                    toast('Password: ' + json.pwd, 4000);
                 }
                 if(json.pwdConfirm != null) {
-                    toast(json.pwdConfirm, 4000);
+                    toast('Confirm Password: ' + json.pwdConfirm, 4000);
                 }
                 if(json.mail != null) {
-                    toast(json.mail, 4000);
+                    toast('Email: ' + json.mail, 4000);
                 }
             }
         });
