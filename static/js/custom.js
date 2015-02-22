@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $(".button-collapse").sideNav();
+    $('select').material_select();
     $('.dropdown-button').dropdown({
         hover: false
     });
@@ -65,5 +66,13 @@ $(document).ready(function() {
                 }
             }
         });
+    });
+
+    $('#problem-search').submit(function(event) {
+        event.preventDefault();
+        var value = $('#search').val();
+        var key = $('#option').val();
+        value = encodeURIComponent(value);
+        window.location.href = '/problems?' + key + '=' + value;
     });
 });

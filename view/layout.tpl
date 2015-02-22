@@ -23,10 +23,9 @@
     <header>
       <ul id="user-dropdown" class="dropdown-content">
         {{if .IsCurrentUser}}
-          <li><a href="/settings">Profile</a></li>
           {{if .IsShowAdmin}}<li><a href="/admin">Admin</a></li>{{end}}
           {{if .IsShowTeacher}}<li><a href="/admin">Teacher</a></li>{{end}}
-          <li class="divider"></li>
+          <li><a href="/settings">Profile</a></li>
           <li><a id="user-signout" href="#">Sign Out</a></li>
         {{else}}
           <li><a href="/sess">Sign In</a></li>

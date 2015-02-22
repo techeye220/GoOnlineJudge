@@ -8,6 +8,13 @@ nav
 	overflow: hidden;
 }
 
+.btn-page
+{
+    margin-bottom: 0;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
 .row
 {
     margin-bottom: 0;
