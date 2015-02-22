@@ -8,11 +8,75 @@ nav
 	overflow: hidden;
 }
 
+table.compact td
+{
+    padding: 7px 5px 0;
+}
+
 .btn-page
 {
     margin-bottom: 0;
     padding: 0 1rem;
     overflow: hidden;
+}
+
+.btn-status
+{
+    margin-bottom: 0;
+    padding: 0 1rem;
+    overflow: hidden;
+    cursor: default;
+    height: 24px;
+    line-height: 24px;
+}
+
+.btn-status.j0
+{
+    background-color: #ff9800;
+}
+.btn-status.j1
+{
+    background-color: #2196f3;
+}
+.btn-status.j2
+{
+    background-color: #9c27b0;
+}
+.btn-status.j3
+{
+    background-color: #f44336;
+}
+.btn-status.j4
+{
+
+}
+.btn-status.j5
+{
+
+}
+.btn-status.j6
+{
+
+}
+.btn-status.j7
+{
+
+}
+.btn-status.j8
+{
+
+}
+.btn-status.j9
+{
+    background-color: #e91e63;
+}
+.btn-status.j10
+{
+    background-color: #212121;
+}
+.btn-status.j11
+{
+    background-color: #ff9800;
 }
 
 .row
