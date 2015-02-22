@@ -32,46 +32,48 @@
           <li><a href="/users/new">Sign Up</a></li>
         {{end}}
       </ul>
-      <nav>
-        <div class="container">
-          <div class="nav-wrapper">
-            <div class="col s12">
-              <a href="/" class="left brand-logo">ZJGSU</a>
-              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-              <ul class="right hide-on-med-and-down">
-                <li {{if .IsNews}}class="active"{{end}}><a href="/">Home</a></li>
-                <li {{if .IsProblem}}class="active"{{end}}><a href="/problems">Problems</a></li>
-                <li {{if .IsStatus}}class="active"{{end}}><a href="/status">Status</a></li>
-                <li {{if .IsRanklist}}class="active"{{end}}><a href="/ranklist">Ranklist</a></li>
-                <li {{if .IsContest}}class="active"{{end}}><a href="/contests">Contests</a></li>
-                <li {{if.IsOSC}}class="active"{{end}}><a href="/osc">OSC</a></li>
-                <li {{if.IsFAQ}}class="active"{{end}}><a href="/faq">FAQ</a></li>
-                <li>
-                  <a class="dropdown-button" href="#" data-activates="user-dropdown">
-                    <i class="mdi-action-account-circle"></i>
-                    <i class="mdi-navigation-arrow-drop-down"></i>
-                  </a>
-                </li>
-              </ul>
-              <ul class="side-nav" id="mobile-demo">
-                <li {{if .IsNews}}class="active"{{end}}><a href="/">Home</a></li>
-                <li {{if .IsProblem}}class="active"{{end}}><a href="/problems">Problems</a></li>
-                <li {{if .IsStatus}}class="active"{{end}}><a href="/status">Status</a></li>
-                <li {{if .IsRanklist}}class="active"{{end}}><a href="/ranklist">Ranklist</a></li>
-                <li {{if .IsContest}}class="active"{{end}}><a href="/contests">Contests</a></li>
-                <li {{if.IsOSC}}class="active"{{end}}><a href="/osc">OSC</a></li>
-                <li {{if.IsFAQ}}class="active"{{end}}><a href="/faq">FAQ</a></li>
-                <li>
-                  <a class="dropdown-button" href="#" data-activates="user-dropdown">
-                    <i class="mdi-action-account-circle"></i>
-                    <i class="mdi-navigation-arrow-drop-down"></i>
-                  </a>
-                </li>
-              </ul>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="container">
+            <div class="nav-wrapper">
+              <div class="col s12">
+                <a href="/" class="left brand-logo">ZJGSU</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <ul class="right hide-on-med-and-down">
+                  <li {{if .IsNews}}class="active"{{end}}><a href="/">Home</a></li>
+                  <li {{if .IsProblem}}class="active"{{end}}><a href="/problems">Problems</a></li>
+                  <li {{if .IsStatus}}class="active"{{end}}><a href="/status">Status</a></li>
+                  <li {{if .IsRanklist}}class="active"{{end}}><a href="/ranklist">Ranklist</a></li>
+                  <li {{if .IsContest}}class="active"{{end}}><a href="/contests">Contests</a></li>
+                  <li {{if.IsOSC}}class="active"{{end}}><a href="/osc">OSC</a></li>
+                  <li {{if.IsFAQ}}class="active"{{end}}><a href="/faq">FAQ</a></li>
+                  <li>
+                    <a class="dropdown-button" href="#" data-activates="user-dropdown">
+                      <i class="mdi-action-account-circle"></i>
+                      <i class="mdi-navigation-arrow-drop-down"></i>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                  <li {{if .IsNews}}class="active"{{end}}><a href="/">Home</a></li>
+                  <li {{if .IsProblem}}class="active"{{end}}><a href="/problems">Problems</a></li>
+                  <li {{if .IsStatus}}class="active"{{end}}><a href="/status">Status</a></li>
+                  <li {{if .IsRanklist}}class="active"{{end}}><a href="/ranklist">Ranklist</a></li>
+                  <li {{if .IsContest}}class="active"{{end}}><a href="/contests">Contests</a></li>
+                  <li {{if.IsOSC}}class="active"{{end}}><a href="/osc">OSC</a></li>
+                  <li {{if.IsFAQ}}class="active"{{end}}><a href="/faq">FAQ</a></li>
+                  <li>
+                    <a class="dropdown-button" href="#" data-activates="user-dropdown">
+                      <i class="mdi-action-account-circle"></i>
+                      <i class="mdi-navigation-arrow-drop-down"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main>
