@@ -38,23 +38,23 @@
               <td>您的程序输出的格式不符合要求（比如空格和换行与要求不一致）</td>
             </tr>
             <tr>
-              <td class="center-align"><a class="btn btn-status">Runtime Error</a></td>
+              <td class="center-align"><a class="btn btn-status j4">Runtime Error</a></td>
               <td>您的程序发生运行错误，可能是数组越界，堆栈溢出（比如，递归调用层数太多）等情况引起</td>
             </tr>
             <tr>
-              <td class="center-align"><a class="btn btn-status">Wrong Answer</a></td>
+              <td class="center-align"><a class="btn btn-status j5">Wrong Answer</a></td>
               <td>您的程序未能对评测系统的数据返回正确的结果，即答案错误</td>
             </tr>
             <tr>
-              <td class="center-align"><a class="btn btn-status">Time Limit Exceeded</a></td>
+              <td class="center-align"><a class="btn btn-status j6">Time Limit Exceeded</a></td>
                 <td>您的程序未能在规定时间内运行结束</td>
             </tr>
             <tr>
-              <td class="center-align"><a class="btn btn-status">Memory Limit Exceeded</a></td>
+              <td class="center-align"><a class="btn btn-status j7">Memory Limit Exceeded</a></td>
               <td>您的程序使用了超过限制的内存</td>
             </tr>
             <tr>
-              <td class="center-align"><a class="btn btn-status">Output Limit Exceeded</a></td>
+              <td class="center-align"><a class="btn btn-status j8">Output Limit Exceeded</a></td>
               <td>您的程序输出的内容超出限制，可能是输出部分陷入无限循环引起</td>
             </tr>
             <tr>
